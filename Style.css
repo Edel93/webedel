@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+h1 {
+      margin-top: 60px;
+    }
+p {
+  
+  width: 900px;  
+  text-align: justify;
+  margin: 0 auto; 
+      /* Atur lebar paragraf agar teks otomatis turun */
+ 
+}
+
+div.gallery {
+  display: flex;
+  flex-wrap: 0;
+  justify-content: 0;
+}
+
+div.gallery-item {
+  margin: 5px;
+  border: 2px solid #000000;
+  width: calc(25% - 20px);
+}
+
+div.gallery-item:hover {
+  border: 1px solid #2b63ff;
+}
+
+div.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+div.gallery-item div.desc {
+  padding: 15px;
+  text-align: center;
+}
+/* Tidak usah dimasukin */
+@media only screen and (max-width: 768px) {
+  div.gallery-item {
+    width: calc(50% - 20px);
+  }
+}
+/* Tidak usah dimasukin */
+@media only screen and (max-width: 480px) {
+  div.gallery-item {
+    width: calc(100% - 20px);
+  }
+}
+
+#topnavbar {
+   width: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-color: RoyalBlue;
+   font-family: Arial, sans-serif;
+   font-size: 15px;
+
+}
+
+.nav-link {
+   display: inline-block; /* Bikin perbedaan inline-block dengan block. Block: membentuk kotak, sedangkan inline block berbentuk kotak yang memanjang ke kanan.  */
+   width: 100px; /* Beri 20px terlebih dahulu, minta siswa lihat hasilnya, lalu mengajarkan mereka jika tampilannya ingin berjarak maka ukurannya dikasih 100 */
+   height: 55px;/* Beri 20px terlebih dahulu, minta siswa lihat hasilnya, lalu mengajarkan mereka jika tampilan kotaknya bagus, maka gunakan 50px */
+   color: white; /* Mengatur warna tulisan pada navlink */
+   text-align: center; /* Kasih left, lalu minta mereka lihat hasilnya baru diganti ke center */
+   line-height: 55px; /* Mengatur posisi tulisan menu berada di tengah kotak */
+   text-decoration: none; /* Berikan nilai awal 0, lalu minta mereka temukkan line di bawah menu. Minta isi text decoration menjadi none, dan minta jawaban dari mereka. */
+}
+
+#logo {
+   width: 120px;
+   background-color: Black;
+   font-weight: bold;
+}
+
+#about {
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+
+.wrap-text {
+  width: 300px;           /* Atur lebar paragraf agar teks otomatis turun */
+  word-wrap: break-word;  /* Pecah kata panjang bila perlu */
+}
